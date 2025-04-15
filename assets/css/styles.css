@@ -1,5 +1,5 @@
 /*Google fonts import*/
-.oswald-<uniquifier> {
+.oswald-<uniquifier > {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -85,6 +85,9 @@ body {
 /*Header*/
 header {
   background-color: lightcoral;
+}
+h1 {
+  font-family: Oswald, sans-serif;
 }
 
 /*Main content*/
