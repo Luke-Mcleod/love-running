@@ -181,21 +181,6 @@ main {
   color: #ffffff;
 }
 
-/*Footer*/
-#social-networks {
-  text-align: center;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-}
-
-#social-networks i {
-  font-size: 160%;
-  padding: 5%;
-  color: #3a3a3a;
-}
-
 #reasons {
   width: 90%;
   margin: 20px auto;
@@ -237,6 +222,46 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#times {
+  background: url(../images/dublin-city.webp) no-repeat center/cover;
+  /*Handles resposivity without the need for a medoia query*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times div {
+  color: #fafafa;
+  background-color: rgba(0 0 0 .6);
+  padding: 20px;
+  text-align: center;
+  /*This ill not wrap on screens of less then 400px wide.
+  each div will expand to fill the available space on its row*/
+  flex-basis: 200px;
+  flex-grow: 1;
+  /* Creates a grid of meetup time divs over the background image */
+  border: 2px solid white;
+}
+
+#times h3 {
+  /*Override the heading color set in general styles*/
+  color: #fafafa;
+}
+
+/*Footer*/
+#social-networks {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
 }
 
 /*Media query: tablets and larger (768px and up)*/
@@ -309,12 +334,13 @@ main {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media screen and (min-width: 1200px) {
+
   /*Reasons section*/
   #benefits {
     display: flex;
     flex-direction: row;
   }
-  
+
   #benefits-div {
     flex: 1;
   }
